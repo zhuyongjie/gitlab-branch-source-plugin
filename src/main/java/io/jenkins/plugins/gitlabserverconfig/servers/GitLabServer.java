@@ -90,7 +90,7 @@ public class GitLabServer extends AbstractDescribableImpl<GitLabServer> {
     /**
      * Common prefixes that we should remove when inferring a display name.
      */
-    private static final String[] COMMON_PREFIX_HOSTNAMES = { "git.", "gitlab.", "vcs.", "scm.", "source." };
+    private static final String[] COMMON_PREFIX_HOSTNAMES = {"git.", "gitlab.", "vcs.", "scm.", "source."};
 
     /**
      * A unique name used to identify the endpoint.
@@ -134,7 +134,7 @@ public class GitLabServer extends AbstractDescribableImpl<GitLabServer> {
 
     /**
      * The secret token used while setting up hook url in the GitLab server
-     * 
+     *
      * @Deprecated Use webhookSecretCredentialsId instead
      */
     private transient Secret secretToken;
@@ -149,8 +149,8 @@ public class GitLabServer extends AbstractDescribableImpl<GitLabServer> {
     /**
      * The credentials matcher for StringCredentials
      */
-    public static final CredentialsMatcher WEBHOOK_SECRET_CREDENTIALS_MATCHER = CredentialsMatchers
-            .instanceOf(StringCredentials.class);
+    public static final CredentialsMatcher WEBHOOK_SECRET_CREDENTIALS_MATCHER =
+            CredentialsMatchers.instanceOf(StringCredentials.class);
 
     /**
      * {@code true} if and only if Jenkins should trigger a build immediately on a
@@ -503,7 +503,7 @@ public class GitLabServer extends AbstractDescribableImpl<GitLabServer> {
 
     /**
      * Returns {@code true} if we should use the /-/ prefix in URLs
-     * 
+     *
      * @return {@code true} if we should use the /-/ prefix in URLs
      */
     public boolean isUseActionPrefix() {
@@ -512,7 +512,7 @@ public class GitLabServer extends AbstractDescribableImpl<GitLabServer> {
 
     /**
      * Data Bound Setter for using the /-/ prefix in URLs
-     * 
+     *
      * @param useActionPrefix {@code true} if we should use the /-/ prefix in URLs
      */
     @DataBoundSetter

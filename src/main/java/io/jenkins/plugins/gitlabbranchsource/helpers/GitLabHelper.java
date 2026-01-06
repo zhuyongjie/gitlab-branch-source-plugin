@@ -187,7 +187,7 @@ public class GitLabHelper {
                                 (ItemGroup) context,
                                 ACL.SYSTEM,
                                 fromUri(StringUtils.defaultIfBlank(
-                                        getServerUrlFromName(serverName), GitLabServer.GITLAB_SERVER_URL))
+                                                getServerUrlFromName(serverName), GitLabServer.GITLAB_SERVER_URL))
                                         .build()),
                         CredentialsMatchers.allOf(withId(credentialsId), GitLabServer.CREDENTIALS_MATCHER));
             } else {
@@ -197,7 +197,7 @@ public class GitLabHelper {
                                 (Item) context,
                                 ACL.SYSTEM,
                                 fromUri(StringUtils.defaultIfBlank(
-                                        getServerUrlFromName(serverName), GitLabServer.GITLAB_SERVER_URL))
+                                                getServerUrlFromName(serverName), GitLabServer.GITLAB_SERVER_URL))
                                         .build()),
                         CredentialsMatchers.allOf(withId(credentialsId), GitLabServer.CREDENTIALS_MATCHER));
             }
